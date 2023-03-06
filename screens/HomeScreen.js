@@ -128,7 +128,7 @@ const HomeScreen = () => {
             <Text style={styles.homeText}>Home</Text>
             <Text>{displayCurrentaddress}</Text>
           </View>
-          <Pressable style={styles.Imagecontainer}>
+          <Pressable onPress={()=>navigation.navigate("Profile")} style={styles.Imagecontainer}>
             <Image
               style={styles.profile}
               source={{
