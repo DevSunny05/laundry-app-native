@@ -5,7 +5,7 @@ import { signOut } from 'firebase/auth';
 import { useNavigation } from '@react-navigation/native';
 
 const ProfileScreen = () => {
-    const user=auth.currentUser;
+    const user=auth.currentUser
     const navigation=useNavigation()
     const signoutUser=()=>{
         signOut(auth).then(()=>{
